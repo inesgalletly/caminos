@@ -1,18 +1,18 @@
 import './style.css';
-import {Map, View} from 'ol';
-import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
+import {Map, View} from './ol';
+import {Tile as TileLayer, Vector as VectorLayer} from './ol/layer';
 import './node_modules/ol-layerswitcher/dist/ol-layerswitcher.css';
-import LayerSwitcher from 'ol-layerswitcher';
-import {OSM, Vector as VectorSource} from 'ol/source'
-import TileWMS from 'ol/source/TileWMS';
-import {GeoJSON} from 'ol/format';
+import LayerSwitcher from './ol-layerswitcher';
+import {OSM, Vector as VectorSource} from './ol/source'
+import TileWMS from './ol/source/TileWMS';
+import {GeoJSON} from './ol/format';
 import {
   OverviewMap,
   ZoomToExtent,
-  defaults as defaultControls} from "ol/control";
-import LayerGroup from 'ol/layer/Group';
-import {Style, Fill, Stroke} from 'ol/style';
-import Overlay from 'ol/Overlay';
+  defaults as defaultControls} from "./ol/control";
+import LayerGroup from './ol/layer/Group';
+import {Style, Fill, Stroke} from './ol/style';
+import Overlay from './ol/Overlay';
 
 //MAPA SITUACION
 const overviewMapControl = new OverviewMap({
