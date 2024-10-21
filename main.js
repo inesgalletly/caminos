@@ -117,11 +117,10 @@ const ortoPNOA = new TileLayer({
     url: 'https://www.ign.es/wms-inspire/pnoa-ma?',
     params: {'LAYERS': 'OI.OrthoimageCoverage', 'TILED': true},
     attribution: 'IGN',
+    }),  
     title: 'PNOA',
     type: 'base',
-    visible: false,
-
-  })  
+    visible: false
 });
 
 //MAPA MTN50
@@ -130,11 +129,10 @@ const MTN50 = new TileLayer({
     url: 'https://www.ign.es/wms/primera-edicion-mtn',
     params: {'LAYERS': 'MTN50', 'TILED': true},
     attribution: 'IGN',
+    }),
     title: 'MTN50',
     type: 'base',
-    visible: true,
-
-  })
+    visible: true
 });
 
 //MAPA OSM
